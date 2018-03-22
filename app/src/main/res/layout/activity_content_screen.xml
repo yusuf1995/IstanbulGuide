@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yusuf.myapplication.content_screen"
+    android:weightSum="20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="6"
+        android:layout_height="0dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/textAreaScroller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_x="0px"
+            android:layout_y="0px"
+            android:paddingBottom="0dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/content_inf_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/fbedittext"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fbedittext"
+                android:layout_marginTop="22dp"
+                android:paddingBottom="25dp"
+                android:paddingLeft="8dp"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="COMMENTS" />
+
+        <Button
+            android:id="@+id/give_vote"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:text="Give Vote" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

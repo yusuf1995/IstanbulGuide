@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yusuf.myapplication.comment_screen">
+
+
+    <ScrollView
+        android:id="@+id/textAreaScroller_comment"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_x="0px"
+        android:layout_y="0px"
+        android:background="@color/cast_expanded_controller_background_color"
+        android:paddingBottom="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="0.86">
+
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/fbedittext"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/fbedittext"
+            android:layout_marginTop="22dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/cast_expanded_controller_progress_text_color" />
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/comment_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.30"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Yorum Yap" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.44"
+        android:text="Gonder" />
+
+</LinearLayout>

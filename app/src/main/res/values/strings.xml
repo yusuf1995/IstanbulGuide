@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Sing up</string>
+    <string name="login">Log in</string>
+    <string name="profil">Profil</string>
+
+    <string name="title_activity_content_screen">content_screen</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="loading">Creating Account</string>
+</resources>

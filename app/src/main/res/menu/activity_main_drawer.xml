@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mosques"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Mosques" />
+        <item
+            android:id="@+id/parks"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Parks" />
+        <item
+            android:id="@+id/church"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Church" />
+        <item
+            android:id="@+id/palaces"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Palaces" />
+    </group>
+
+    <item android:title="About Us">
+        <menu>
+
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/ic_menu_send"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>
